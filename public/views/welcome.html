@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="css/welcome_styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+
+<body>
+<div class="container">
+     <!--Search box-->
+    <div id="searchBox" class="form-group has-feedback">
+        <input type="text" class="form-control" ng-disabled="!optionSelected()" placeholder={{searchBy}}
+               ng-model="searchInput" ng-change="newInput()" ng-init="searchInput=''"
+               ng-model-options="{debounce:1000}">
+        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+    </div>
+    <!--DropdownIcon-->
+    <img id="dropdownMenu" ng-click="!newInput() ? visible = !visible : getResults()" src="{{dropdown_image}}">
+
+    <!--Dropdown options-->
+    <div ng-show="visible">
+                    <span ng-repeat="option in searchOptions">
+                       <img class="searchBy" data-toggle="tooltip" title="{{option.tooltip}}"
+                            ng-click="selectOption(option)" ng-src="{{getImage(option)}}">
+                    </span>
+    </div>
+</div>
+
+
+</body>
+</html>
