@@ -18,7 +18,7 @@
         <i class="glyphicon glyphicon-search form-control-feedback"></i>
     </div>
     <!--DropdownIcon-->
-    <img id="dropdownMenu" ng-click="!newInput() ? visible = !visible : getResults()" src="{{dropdown_image}}">
+    <img id="dropdownMenu" ng-click="!newInput() ? visible = !visible : search(searchInput)" src="{{dropdown_image}}">
 
     <!--Dropdown options-->
     <div ng-show="visible">
