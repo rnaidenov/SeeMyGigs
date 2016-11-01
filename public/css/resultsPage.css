@@ -1,0 +1,23 @@
+.header {
+    text-align: center;
+    margin:10%;
+    font-family: "Century Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 100;
+}
+
+.dateBox {
+    width:80px;
+    height: 80px;
+    background-color: #328570;
+    display: inline-block;
+}
+
+.eventInfo {
+    width: 220px;
+    height: 80px;
+    background-color: #6cccda;
+    display: inline-block;
+}

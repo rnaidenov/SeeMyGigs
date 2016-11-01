@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
-
-<link rel="stylesheet" href = "bower_components/bootstrap/dist/css/bootstrap.css">
+<html lang="en" ng-app = "app">
+<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="css/welcome_styles.css">
+<link rel="stylesheet" href="css/resultsPage.css">
 
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
 </head>
+
 <body>
-    <welcome></welcome>
+
+<header>Pages
+    <nav>
+        <a ui-sref="searchPage">Search</a>
+        <a ui-sref="resultsPage">Results</a>
+
+    </nav>
+</header>
+<div class="content">
+    <div class="scroll">
+        <ui-view></ui-view>
+    </div>
+</div>
+
+
 </body>
 </html>
 
 <script src = "bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src = "bower_components/ngstorage/ngStorage.min.js"></script>
 <script src = "bower_components/jquery/dist/jquery.js"></script>
 <script src = "bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="app.js"></script>
+<script src = "app.js"></script>
+<script src = "js/controllers.js"></script>
+<script src= "js/searchPage.js"></script>
+<script src = "js/resultsPage.js"></script>
 <script src = "jquery/tooltip.js"></script>

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" href="css/welcome_styles.css">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +7,10 @@
 </head>
 
 <body>
+
 <div class="container">
+
+
      <!--Search box-->
     <div id="searchBox" class="form-group has-feedback">
         <input type="text" class="form-control" ng-disabled="!optionSelected()" placeholder={{searchBy}}
@@ -18,7 +19,7 @@
         <i class="glyphicon glyphicon-search form-control-feedback"></i>
     </div>
     <!--DropdownIcon-->
-    <img id="dropdownMenu" ng-click="!newInput() ? visible = !visible : search(searchInput)" src="{{dropdown_image}}">
+    <img id="dropdownMenu" ng-click="!newInput() ? visible = !visible : search(searchInput)" ng-src="{{dropdown_image}}">
 
     <!--Dropdown options-->
     <div ng-show="visible">
@@ -32,3 +33,4 @@
 
 </body>
 </html>
+
