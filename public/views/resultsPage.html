@@ -5,11 +5,22 @@
     <title>Results</title>
 </head>
 <body ng-controller="resultsCtrl">
-    <div>
-        <h1 class = "header">
-            {{results.length}} upcoming events
-        </h1>
-    </div>
+<div>
+    <h1 class="header">
+        {{results.length}} upcoming events
+    </h1>
+    <ul ng-repeat="data in results">
+        <div class="event_container">
+
+            <span class="resultArtist">{{data.event_owner}} <br></span>
+            <span class="resultVenue">{{data.venue}}</span>
+        </div>
+    </ul>
+
+
+
+
+</div>
 
 </body>
 </html>

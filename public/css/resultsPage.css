@@ -21,3 +21,31 @@
     background-color: #6cccda;
     display: inline-block;
 }
+
+.event_container {
+    text-align: center;
+    width: 500px;
+    height: 70px;
+    background-color: #9d9d9d;
+    display: block;
+    margin:auto;
+}
+
+.resultArtist {
+    font-family: "Century Gothic";
+    font-size: 28px;
+    font-style: normal;
+    font-variant: small-caps;
+}
+
+.resultVenue {
+    font-size: 18px;
+    font-family: "Century Gothic";
+    font-style: normal;
+    color: #761c19;
+    margin: auto;
+}
+
+.not-visible {
+    visibility: hidden;
+}

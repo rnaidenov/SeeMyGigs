@@ -8,8 +8,8 @@ app.config(function ($stateProvider) {
             controller : "searchCtrl"
         })
         .state("resultsPage",{
-            url: "/results?:q",
+            url: "/results/:q",
             templateUrl:"views/resultsPage.html",
             controller : "resultsCtrl"
-        });
-})
+        })
+    });

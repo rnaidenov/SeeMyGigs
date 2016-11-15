@@ -4,8 +4,8 @@ var cors = require("cors");
 var app = express();
 
 
-var mongoose = require ("mongoose");
-mongoose.connect("mongodb://localhost/myEvents");
+// var mongoose = require ("mongoose");
+// mongoose.connect("mongodb://localhost/myEvents");
 
 var connect = require("connect");
 var serveStatic = require("serve-static");
